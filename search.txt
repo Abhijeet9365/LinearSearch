@@ -1,0 +1,14 @@
+public class LinearSearch {
+	public static void main(String[] args) {
+	int []arr = {2,5,1,8,9};
+	int index = LinearSearch(arr,9);
+	System.out.println("IndexPosition of Array="+index);		
+}
+public static int LinearSearch(int []arr, int item) {
+	for(int i=0;i<arr.length;i++) {
+		if(arr[i]==item) {
+			return i;
+		}
+	}
+	return -1;
+}
